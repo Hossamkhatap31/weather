@@ -1,8 +1,8 @@
-// search
+// البحث
 let searchInput = document.querySelector("#inputLocation");
 let findBtn = document.querySelector("#FindBtn");
 
-//frist day
+// اليوم الحالي
 let today = document.querySelector("#currentDay");
 let currentDate = document.querySelector("#currentDate");
 let currentMonth = document.querySelector("#currentMonth");
@@ -14,24 +14,24 @@ let humidity = document.querySelector("#humidity");
 let windKph = document.querySelector("#wind_kph");
 let windDir = document.querySelector("#wind_dir");
 
-//next day
+// اليوم التالي
 let nextDay = document.querySelector("#nextDay");
 let nextTempIcon = document.querySelector("#nextTempIcon");
 let secondTempBig = document.querySelector("#secondTempBig");
 let secondTempSmall = document.querySelector("#secondTempSmall");
 let secondText = document.querySelector("#secondText");
 
-// coming day
+// اليوم القادم
 let comingDay = document.querySelector("#comingDay");
 let thirdIcon = document.querySelector("#thirdIcon");
 let thirdTempBig = document.querySelector("#thirdTempBig");
 let thirdTempSmall = document.querySelector("#thirdTempSmall");
 let thirdText = document.querySelector("#thirdText");
 
-// 
+// مصفوفة الأيام القادمة
 let forecastObj;
 
-// API
+// جلب البيانات من API
 async function getWeatherApi(cityName = "cairo") {
   try {
     let weatherUrl = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=963d2d3998b64b82ae8115926241805&q=${cityName}&days=3`);
