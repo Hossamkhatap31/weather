@@ -1,8 +1,8 @@
-// البحث
+// search
 let searchInput = document.querySelector("#inputLocation");
 let findBtn = document.querySelector("#FindBtn");
 
-// اليوم الحالي
+//frist day
 let today = document.querySelector("#currentDay");
 let currentDate = document.querySelector("#currentDate");
 let currentMonth = document.querySelector("#currentMonth");
@@ -14,21 +14,20 @@ let humidity = document.querySelector("#humidity");
 let windKph = document.querySelector("#wind_kph");
 let windDir = document.querySelector("#wind_dir");
 
-// اليوم التالي
+// next day 
 let nextDay = document.querySelector("#nextDay");
 let nextTempIcon = document.querySelector("#nextTempIcon");
 let secondTempBig = document.querySelector("#secondTempBig");
 let secondTempSmall = document.querySelector("#secondTempSmall");
 let secondText = document.querySelector("#secondText");
-
-// اليوم القادم
+//coming day
 let comingDay = document.querySelector("#comingDay");
 let thirdIcon = document.querySelector("#thirdIcon");
 let thirdTempBig = document.querySelector("#thirdTempBig");
 let thirdTempSmall = document.querySelector("#thirdTempSmall");
 let thirdText = document.querySelector("#thirdText");
 
-// مصفوفة الأيام القادمة
+// 
 let forecastObj;
 
 // جلب البيانات من API
